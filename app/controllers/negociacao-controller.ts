@@ -40,7 +40,8 @@ export class NegociacaoController {
     }
 
     private limpaForm(): void {
-        document.querySelector('form').reset();
+        const form = <HTMLFormElement>document.querySelector('form');
+        form.reset();
         this.inputData.focus();
     }
 

@@ -27,7 +27,8 @@ export class NegociacaoController {
         return data.getDay() > DiasDaSemana.DOMINGO && data.getDay() < DiasDaSemana.SABADO;
     }
     limpaForm() {
-        document.querySelector('form').reset();
+        const form = document.querySelector('form');
+        form.reset();
         this.inputData.focus();
     }
     atualizaView() {
