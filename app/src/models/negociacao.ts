@@ -1,6 +1,6 @@
-import { Imprimivel } from "../utils/imprimivel.js";
+import { Modelo } from "../interfaces/modelo.js";
 
-export class Negociacao implements Imprimivel{
+export class Negociacao implements Modelo<Negociacao>{
     /*
     private _data: Date;
     private _quantidade: number;
